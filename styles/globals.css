@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background: #fff;
+}
+
+@font-face {
+  font-family: "White Rabbit";
+  src: url("/fonts/whiterabbit.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("https://static1.squarespace.com/static/57bb1b5e59cc68374d95e818/t/6080799bbb54e72b94e23c28/1619032475894/SpaceGrotesk-VariableFont_wght.ttf");
+}
+
+nav {
+  font-family: "White Rabbit", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+button {
+  font-family: "Space Grotesk", sans-serif;
+  cursor: pointer;
+}
+li {
+  cursor: pointer;
+}
+.bgBack {
+  position: relative;
+  z-index: 1;
+}
+.custom-bg {
+  /* background-image: url("https://gateway.ipfs.io/ipfs/bafkreietxc2rl4g3e64s4uxspsdjfo45qkkpvn7oobrypdjebcnln2slci"); */
+
+  background: #101010;
+}
+
+@media (min-width: 601px) and (max-width: 2316px) {
+  .fixed-text {
+    font-size: 10px;
+    color: blue;
+  }
+}
+
+.fixed-text {
+  font-size: 64px;
+}
+
+/* Increase font size for screens wider than 600px */
+@media (min-width: 601px) {
+  .fixed-text {
+    font-size: 32px;
+  }
+}
+
+/* Further increase font size for screens wider than 1200px */
+@media (min-width: 1201px) {
+  .fixed-text {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 4000px) {
+  body {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1500px;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+  }
+}
