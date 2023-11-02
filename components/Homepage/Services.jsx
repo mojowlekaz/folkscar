@@ -35,10 +35,10 @@ export default function Services() {
             </p>
           </div>
         </div>
-        <div className="flex  flex-row gap-5 ">
+        <div className="flex w-full  flex-row gap-5 ">
           {data.map((datas, index) => (
             <div key={index}>
-              <div className="flex flex-col text-white  rounded-[9px] justify-center items-center text-center  bg-1E1E1E h-[230px] w-[400px] gap-[10px] ">
+              <div className="flex flex-col text-white wsmall  rounded-[9px] justify-center items-center text-center  bg-1E1E1E h-[230px] w-[400px] gap-[10px] ">
                 <img src={datas.image} alt={datas.title} />
                 <h1 className="fontFF">{datas.title}</h1>
                 <p className="fontFF">{datas.text}</p>
