@@ -1,24 +1,29 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import CarUniversalCard from "./CarUniversalCard";
+import CarCollections from "../CarCollections";
+import { useCategory } from "../Context/CategoryContext";
 
-export default function CardCategories() {
-  const categories = [
-    "All Cars & Motorbikes",
-    "Motorbikes",
-    "Cars",
-    "Automatic Cars",
-    "Manual Cars",
-    "With Driver",
-  ];
+export const categories = [
+  "All Cars & Motorbikes",
+  "Motorbikes",
+  "Cars",
+  "Automatic Cars",
+  "Manual Cars",
+  "With Driver",
+];
+export const buttonStyle = {
+  borderTopLeftRadius: "9px",
+  borderTopRightRadius: "9px",
+  borderBottom: "none",
+};
 
-  const buttonStyle = {
-    borderTopLeftRadius: "9px",
-    borderTopRightRadius: "9px",
-    borderBottom: "none",
-  };
+export const linkStyle = {
+  textDecoration: "underline",
+};
 
-  const linkStyle = {
-    textDecoration: "underline",
-  };
+export default function CardCategories({ vehicle }) {
+  const { selectedCategory, handleCategorySelect } = useCategory();
 
   return (
     <div>
@@ -31,8 +36,11 @@ export default function CardCategories() {
         </div>
         {categories.map((category, index) => (
           <button
-            className=" w-[184px] hover:bg-black hover:text-white  border-2 border-black h-[34px] flex justify-center items-center rounded-[34px] "
+            className={`w-[184px] hover:bg-black hover:text-white border-2 border-black h-[34px] flex justify-center items-center rounded-[34px] ${
+              selectedCategory === category ? "bg-black text-white" : ""
+            }`}
             key={index}
+            onClick={() => handleCategorySelect(category)}
           >
             {category}
           </button>
