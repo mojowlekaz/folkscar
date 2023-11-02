@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import Caroverlay from "./carOverlay";
 
 export default function Works() {
   const data = [
@@ -49,7 +48,7 @@ export default function Works() {
                   <div className="flex bg-white h-[106px] w-[57px] justify-center items-center rounded-[16px]">
                     <img
                       layout="responsive"
-                      objectFit="cover"
+                      objectfit="cover"
                       style={{ width: "50%", height: "20%" }}
                       src={item.icon}
                     />
