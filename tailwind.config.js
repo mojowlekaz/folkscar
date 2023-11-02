@@ -9,6 +9,9 @@ module.exports = {
       backgroundColor: {
         "1A1A1A": "#1A1A1A",
         "2480EA": "#2480EA",
+        "1E1E1E": "#1E1E1E",
+        "0F0F0F": "#0F0F0F",
+        "000000": "#000000",
       },
     },
   },

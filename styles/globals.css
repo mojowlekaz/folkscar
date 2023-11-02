@@ -28,6 +28,10 @@ body {
   font-family: "Space Grotesk";
   src: url("https://static1.squarespace.com/static/57bb1b5e59cc68374d95e818/t/6080799bbb54e72b94e23c28/1619032475894/SpaceGrotesk-VariableFont_wght.ttf");
 }
+@font-face {
+  font-family: "HelveticaRounded";
+  src: url("/fonts/HelveticaRounded.otf") format("otf");
+}
 
 nav {
   font-family: "White Rabbit", sans-serif;
@@ -35,6 +39,14 @@ nav {
   z-index: 1;
 }
 
+.bgfront {
+  position: relative;
+  z-index: 1;
+}
+h1 {
+  font-family: "White Rabbit", sans-serif;
+  color: #ffffff;
+}
 button {
   font-family: "Space Grotesk", sans-serif;
   cursor: pointer;
@@ -48,41 +60,174 @@ li {
 }
 .custom-bg {
   /* background-image: url("https://gateway.ipfs.io/ipfs/bafkreietxc2rl4g3e64s4uxspsdjfo45qkkpvn7oobrypdjebcnln2slci"); */
-
   background: #101010;
 }
 
-@media (min-width: 601px) and (max-width: 2316px) {
-  .fixed-text {
-    font-size: 10px;
-    color: blue;
-  }
-}
-
 .fixed-text {
-  font-size: 64px;
+  font-size: 84px;
+  font-family: "HelveticaRounded", sans-serif;
+  word-wrap: none;
+  word-break: none;
+}
+.borderC {
+  border-top: 2px solid #2480ea;
+  border-left: 2px solid #2480ea;
+  border-right: 2px solid #2480ea;
+  border-bottom: none;
+}
+.img {
+  width: 50%;
+  height: auto; /* The height will adjust proportionally to the width */
+  max-width: 651px; /* Set a maximum width to prevent the image from getting too large */
 }
 
-/* Increase font size for screens wider than 600px */
+p {
+  font-size: 15px;
+  font-family: "Space Grotesk", sans-serif;
+  color: #ffffff;
+}
+.fontF {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  color: #000;
+  line-height: 120%;
+}
+.fontFF {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.p {
+  width: 526px;
+}
+.text {
+  color: #00000080 50%;
+}
+
+/* Screen Sizes Chnages */
 @media (min-width: 601px) {
   .fixed-text {
     font-size: 32px;
+    font-family: "HelveticaRounded", sans-serif;
   }
 }
 
-/* Further increase font size for screens wider than 1200px */
 @media (min-width: 1201px) {
   .fixed-text {
     font-size: 50px;
+    font-family: "HelveticaRounded", sans-serif;
   }
 }
 
-@media (min-width: 4000px) {
+@media screen and (min-width: 700px) and (max-width: 1045px) {
+  .smallwidth {
+    width: 400px;
+  }
+  .smallwidth2 {
+    width: 50%;
+    height: 100%;
+  }
+  .smallheight {
+    height: 100%;
+    width: 100%;
+  }
+  .smallpos {
+    height: 100%;
+    width: 70%;
+    right: 0%;
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+  }
+  .smallpos1 {
+    height: 100%;
+    width: 70%;
+    right: 0%;
+    display: flex;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 1010px) and (max-width: 1074px) {
+  .smallwidth {
+    width: 400px;
+  }
+  .smallwidth2 {
+    width: 100%;
+    height: 100%;
+  }
+  .smallheight {
+    height: 100%;
+    width: 100%;
+  }
+  .smallpos {
+    height: 100%;
+    width: 80%;
+    right: 0%;
+    margin-bottom: -10px;
+    display: flex;
+    position: relative;
+  }
+  .smallpos1 {
+    height: 100%;
+    width: 70%;
+    left: -20%;
+    display: flex;
+    position: absolute;
+  }
+}
+
+@media (min-width: 3000px) {
   body {
     display: flex;
     margin: 0 auto;
     max-width: 1500px;
-    justify-content: center; /* Horizontally center the content */
-    align-items: center; /* Vertically center the content */
+    justify-content: center;
+    align-items: center;
   }
+}
+@media screen and (min-width: 1075px) and (max-width: 1350px) {
+  .smallwidth {
+    width: 500px;
+  }
+  .smallwidth2 {
+    width: 00px;
+  }
+  .smallheight {
+    height: 100%;
+    width: 100%;
+  }
+
+  .smallpos {
+    height: 100%;
+    width: 90%;
+    right: 0%;
+    margin-bottom: 120px;
+    display: flex;
+    position: relative;
+  }
+  .smallpos1 {
+    height: 40%;
+    /* width: 70%; */
+    right: 20%;
+    display: flex;
+    position: absolute;
+  }
+}
+
+.categories {
+  display: flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 405px;
+  width: 200px;
+  border-radius: 10px;
+  background: #fff;
 }
