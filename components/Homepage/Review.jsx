@@ -51,7 +51,7 @@ export default function Review() {
   };
   return (
     <div className="flex flex-row gap-3">
-      <div className="w-full flex flex-col gap-8 p-20 justify-start   bg-000000 h-screen">
+      <div className="w-full flex flex-col gap-8 p-20 justify-start   bg-000000 h-full">
         <div className="flex flex-row  justify-between ">
           <h1 style={{ fontSize: "40px" }} className="font">
             What Our Customers Say
