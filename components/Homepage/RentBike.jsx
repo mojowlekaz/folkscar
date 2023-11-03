@@ -21,7 +21,7 @@ export default function RentBike() {
               fits your needs, and book it for the duration of your choice.
             </p>
             <br />
-            <button className="bg-2480EA text-white w-[126px] text-[16px] h-[40px] rounded-[15px] items-center justify-center flex">
+            <button className="bg-2480EA text-white w-[158px] text-[16px] h-[40px] rounded-[28px] items-center justify-center flex">
               Rent MotorBike
             </button>
           </div>

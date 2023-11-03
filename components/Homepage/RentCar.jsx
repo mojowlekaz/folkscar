@@ -15,7 +15,7 @@ export default function RentCar() {
               fits your needs, and book it for the duration of your choice.
             </p>
             <br />
-            <button className="bg-2480EA text-white w-[96px] text-[16px] h-[30px] rounded-[8px] items-center justify-center flex">
+            <button className="bg-2480EA text-white w-[106px] text-[16px] h-[40px] rounded-[28px] items-center justify-center flex">
               Rent Car
             </button>
           </div>
