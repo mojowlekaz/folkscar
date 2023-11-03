@@ -13,13 +13,24 @@ export default function Collections() {
   const bikes = vehicledata.motorcycles.slice(0, 3);
   const car = vehicledata.cars.slice(0, 6);
   const bike = vehicledata.motorcycles.slice(0, 6);
+  const carsWithAutoTransmission = vehicledata.cars.filter((car) =>
+    car.iconsWithNames.some((iconWithName) => iconWithName.name === "Auto")
+  );
+  const carsWithManualTransmission = vehicledata.cars.filter((car) =>
+    car.iconsWithNames.some((iconWithName) => iconWithName.name === "Manual")
+  );
   const { selectedCategory } = useCategory();
 
   const [filteredData, setFilteredData] = useState([]);
 
   useEffect(() => {
     if (selectedCategory === "All Cars & Motorbikes") {
-      setFilteredData([...cars, ...bikes]);
+      setFilteredData([
+        ...cars,
+        ...bikes,
+        ...carsWithAutoTransmission,
+        ...carsWithManualTransmission,
+      ]);
     } else if (selectedCategory === "Motorbikes") {
       setFilteredData(bike);
     } else if (selectedCategory === "Cars") {
@@ -27,7 +38,15 @@ export default function Collections() {
     } else {
       setFilteredData([]);
     }
-  }, [selectedCategory, cars, bikes, car, bike]);
+  }, [
+    selectedCategory,
+    cars,
+    bikes,
+    car,
+    bike,
+    carsWithAutoTransmission,
+    carsWithManualTransmission,
+  ]);
 
   return (
     <div className="w-full flex flex-col gap-8   bg-1E1E1E h-full">
@@ -45,14 +64,36 @@ export default function Collections() {
         <CardCategories />
 
         <div className="content">
-          <div className=" flex gap-4 flex-wrap">
-            {filteredData.map((vehicle) =>
-              selectedCategory === "Motorbikes" ? (
-                <BikeUniversalCard key={vehicle.id} vehicle={vehicle} />
-              ) : (
-                <CarUniversalCard key={vehicle.id} vehicle={vehicle} />
-              )
-            )}
+          <div className="flex gap-4 flex-wrap">
+            {selectedCategory === "Automatic Cars" &&
+              carsWithAutoTransmission.map((car) => (
+                <CarUniversalCard key={car.id} vehicle={car} />
+              ))}
+
+            {selectedCategory === "Manual Cars" &&
+              carsWithManualTransmission.map((car) => (
+                <CarUniversalCard key={car.id} vehicle={car} />
+              ))}
+
+            {selectedCategory === "Cars" &&
+              vehicledata.cars.map((car) => (
+                <CarUniversalCard key={car.id} vehicle={car} />
+              ))}
+
+            {selectedCategory === "Motorbikes" &&
+              vehicledata.motorcycles.map((bike) => (
+                <BikeUniversalCard key={bike.id} vehicle={bike} />
+              ))}
+
+            {selectedCategory === "All Cars & Motorbikes" &&
+              cars.map((car) => (
+                <CarUniversalCard key={car.id} vehicle={car} />
+              ))}
+
+            {selectedCategory === "All Cars & Motorbikes" &&
+              bikes.map((bike) => (
+                <BikeUniversalCard key={bike.id} vehicle={bike} />
+              ))}
           </div>
         </div>
       </div>
@@ -64,6 +105,7 @@ export default function Collections() {
           </button>
         </Link>
       </div>
+      <br />
     </div>
   );
 }

@@ -11,9 +11,10 @@ export default function RentBike() {
           src="/Rectangle2.png"
         />
         <br />
-        <div className="flex flex-col  relative gap-4">
-          <h1 style={{ fontSize: "48px" }}>Rent A Motorbike</h1>
+        <div className="flex flex-col  justify-center items-center  relative gap-4">
           <div className="p">
+            <h1 style={{ fontSize: "48px" }}>Rent A Motorbike</h1>
+            <br />
             <p>
               Booking a Motorbike with us is simple and easy. You can browse our
               selection of Motorbikes online, choose the motorbike that best

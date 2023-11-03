@@ -167,6 +167,34 @@
           "name": "Gas"
         }
       ]
+    },
+    {
+      "id": 7,
+      "image": "card7.svg",
+      "name": "Toyota Calya G AT 2022",
+      "price": "IDR 400.000",
+      "iconsWithNames": [
+        {
+          "id": 1,
+          "icon": "speed.svg",
+          "name": "300"
+        },
+        {
+          "id": 2,
+          "icon": "material.svg",
+          "name": "Auto"
+        },
+        {
+          "id": 3,
+          "icon": "people.svg",
+          "name": "6 Person"
+        },
+        {
+          "id": 4,
+          "icon": "gas.svg",
+          "name": "Gas"
+        }
+      ]
     }
   ],
 

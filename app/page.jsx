@@ -1,4 +1,5 @@
 import Collections from "@/components/Homepage/Collections";
+import Footer from "@/components/Homepage/Footer";
 import Home from "@/components/Homepage/Home";
 import Navbar from "@/components/Homepage/Navbar";
 import RentBike from "@/components/Homepage/RentBike";
@@ -11,6 +12,7 @@ import Image from "next/image";
 export default function LandingPage() {
   return (
     <div>
+      <Navbar />
       <Home />
       <RentCar />
       <RentBike />
@@ -18,6 +20,7 @@ export default function LandingPage() {
       <Collections />
       <Services />
       <Review />
+      <Footer />
     </div>
   );
 }

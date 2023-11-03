@@ -45,12 +45,13 @@ export default function CardCategories({ vehicle }) {
             {category}
           </button>
         ))}
-        <div>
+        <div className="mb-[20px]">
           <a style={linkStyle} href="#">
             Terms and Conditions
           </a>
         </div>
       </div>
+      <br />
     </div>
   );
 }

@@ -16,7 +16,7 @@ export default function Home() {
       <div className="flex ">
         <div
           className="flex p-20 gap-8 relative  flex-col "
-          style={{ marginTop: "50px" }}
+          style={{ marginTop: "40px" }}
         >
           <h1
             className="fixed-text"
@@ -44,7 +44,7 @@ export default function Home() {
           className="bgBack"
           alt="Car Image"
           src="/carbg.png"
-          style={{ maxWidth: "48%", width: "auto", maxHeight: "120%" }}
+          style={{ maxWidth: "50%", width: "auto", maxHeight: "960px" }}
 
           //   layout="responsive"
           //   src="https://s3-alpha-sig.figma.com/img/1b71/1da1/1ac8690ffa56fa835a13373220d3375f?Expires=1699833600&Signature=Fu2Vyzu~UilR4LJqZGn9u~cYC637DCIZQmNaNDBpWPWi9VZawfUAMzzCrLMBgODjnyjmQoCVz04jU2a09XE~DoVIXd3~Aqi49KHhqHkIA7q~ZUxPfhQvYpE2GoV33nN25ddxBztCId7CGV6EaU-gJh3~ysXC5QI75HC4eNckreQ~dtgWdgpUvUVt~dQyOlc3VV6q~bWSZNSyhAzbhVBwPJDZgOSEqi23WiddTMNTPbk0IkPWgt6FAyYIeXqY5v9c4eeP14WCeNCuXhm5w4RSdaSFlOfxDpcTtpMHn0iBTCaZ0fES4dnWHgRvEeS9pZ7PsbGsjLhJs6KXMfGEK5HDNA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"

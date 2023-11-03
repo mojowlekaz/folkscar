@@ -21,13 +21,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <CategoryProvider>
-          <Navbar />
-          {children}
-          <Footer />
-        </CategoryProvider>
-      </body>
+      <CategoryProvider>
+        <body>{children}</body>
+      </CategoryProvider>
     </html>
   );
 }
