@@ -40,11 +40,14 @@ export default function Review() {
     },
   ];
   const [activeReview, setActiveReview] = useState(0);
+  const [color, setColor] = useState(false);
   const nextReview = () => {
+    setColor(true);
     setActiveReview((prevIndex) => (prevIndex + 1) % data.length);
   };
 
   const prevReview = () => {
+    setColor(false);
     setActiveReview((prevIndex) =>
       prevIndex === 0 ? data.length - 1 : prevIndex - 1
     );
@@ -57,8 +60,8 @@ export default function Review() {
             What Our Customers Say
           </h1>
           <div className="flex gap-2">
-            <ArrowLeft prevReview={prevReview} />
-            <ArrowRight nextReview={nextReview} />
+            <ArrowLeft prevReview={prevReview} color={color} />
+            <ArrowRight nextReview={nextReview} color={color} />
           </div>
         </div>
 
