@@ -21,9 +21,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <CategoryProvider>
-        <body>{children}</body>
-      </CategoryProvider>
+      <body className={inter.className}>
+        <CategoryProvider>{children}</CategoryProvider>
+      </body>
     </html>
   );
 }

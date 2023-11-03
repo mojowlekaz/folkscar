@@ -48,6 +48,10 @@ export default function Collections() {
     carsWithManualTransmission,
   ]);
 
+  function goToCollections() {
+    window.location.href = "/collections";
+  }
+
   return (
     <div className="w-full flex flex-col gap-8   bg-1E1E1E h-full">
       <div className="flex flex-col items-center justify-start">
@@ -99,7 +103,7 @@ export default function Collections() {
       </div>
       <div className="flex justify-center flex-row text-center gap-2 mt-3 items-center">
         <Link href="/collections">
-          <button className=" w-[300px] gap-2 bg-2480EA text-white h-[44px] flex justify-center items-center rounded-[34px] ">
+          <button className="w-[300px] gap-2 bg-2480EA text-white h-[44px] flex justify-center items-center rounded-[34px]">
             See all Inventory
             <img src="/right.svg" />
           </button>

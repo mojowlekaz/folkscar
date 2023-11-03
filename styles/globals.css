@@ -30,11 +30,11 @@ body {
 }
 @font-face {
   font-family: "HelveticaRounded";
-  src: url("/fonts/HelveticaRounded.otf") format("otf");
+  src: url("/fonts/HelveticaRounded.otf") format("opentype");
 }
 
 nav {
-  font-family: "White Rabbit", sans-serif;
+  font-family: "White Rabbit", Arial sans-serif;
   position: relative;
   z-index: 1;
 }
@@ -44,7 +44,7 @@ nav {
   z-index: 1;
 }
 h1 {
-  font-family: "White Rabbit", sans-serif;
+  font-family: "White Rabbit", Arial sans-serif;
   color: #ffffff;
 }
 button {
@@ -65,15 +65,15 @@ li {
 
 .fixed-text {
   font-size: 84px;
-  font-family: "HelveticaRounded", sans-serif;
+  font-family: "HelveticaRounded", Arial sans-serif;
   word-wrap: none;
   word-break: none;
 }
 .borderC {
-  border-top: 2px solid #2480ea;
-  border-left: 2px solid #2480ea;
-  border-right: 2px solid #2480ea;
-  border-bottom: 2px solid #2480ea;
+  border-top: 1px solid #2480ea;
+  border-left: 1px solid #2480ea;
+  border-right: 1px solid #2480ea;
+  border-bottom: 1px solid #2480ea;
 }
 .img {
   width: 50%;
@@ -108,6 +108,10 @@ p {
   color: #00000080 50%;
 }
 
+.no-focus-outline {
+  outline: none !important;
+  border: none !important;
+}
 /* Screen Sizes Chnages */
 @media (min-width: 901px) {
   .fixed-text {
