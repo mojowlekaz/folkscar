@@ -8,7 +8,7 @@ export default function Home() {
         <Image
           alt="Car Image"
           layout="fill"
-          objectfit="cover"
+          objectFit="cover"
           src="/lines.svg"
           style={{ opacity: 0.1 }}
         />
