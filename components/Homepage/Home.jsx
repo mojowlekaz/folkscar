@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="h-screen custom-bg flex w-full">
+    <div className="h-full custom-bg flex w-full">
       <div className="flex ">
         <Image
           alt="Car Image"

@@ -109,16 +109,16 @@ p {
 }
 
 /* Screen Sizes Chnages */
-@media (min-width: 601px) {
+@media (min-width: 901px) {
   .fixed-text {
-    font-size: 32px;
+    font-size: 52px;
     font-family: "HelveticaRounded", sans-serif;
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1301px) {
   .fixed-text {
-    font-size: 50px;
+    font-size: 59px;
     font-family: "HelveticaRounded", sans-serif;
   }
 }
