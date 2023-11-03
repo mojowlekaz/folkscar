@@ -73,7 +73,7 @@ li {
   border-top: 2px solid #2480ea;
   border-left: 2px solid #2480ea;
   border-right: 2px solid #2480ea;
-  border-bottom: none;
+  border-bottom: 2px solid #2480ea;
 }
 .img {
   width: 50%;
