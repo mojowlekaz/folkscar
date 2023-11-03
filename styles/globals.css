@@ -22,7 +22,9 @@ body {
 
 @font-face {
   font-family: "White Rabbit";
-  src: url("/fonts/whiterabbit.ttf") format("truetype");
+  src: url(/fonts/whitrabt.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "Space Grotesk";
