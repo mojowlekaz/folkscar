@@ -32,7 +32,9 @@ export default function CardCategories({ vehicle }) {
           style={buttonStyle}
           className="w-[200px] h-[40px]   items-center text-center  justify-center bg-2480EA"
         >
-          <p className="text-[16px]">Categories</p>
+          <div className="text-[16px] flex flex-row justify-center items-center mt-[7px] text-center">
+            <p> Categories</p>
+          </div>
         </div>
         {categories.map((category, index) => (
           <button

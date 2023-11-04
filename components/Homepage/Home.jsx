@@ -32,10 +32,10 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-row relative gap-5">
-            <button className="bg-2480EA text-white w-[135px] h-[46px] rounded-[8px] items-center justify-center flex">
+            <button className="bg-2480EA text-white text-[18px] w-[135px] h-[46px] rounded-[8px] items-center justify-center flex">
               Rent Car
             </button>
-            <button className="bg-transparent borderC  text-white w-[144px] h-[46px] rounded-[6px] items-center justify-center flex">
+            <button className="bg-transparent borderC text-[18px]  text-white w-[144px] h-[46px] rounded-[6px] items-center justify-center flex">
               Rent Bike
             </button>
           </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ArrowRight({ nextReview, color }) {
   const style = {
-    backgroundColor: color ? "#2480EA" : "initial",
+    backgroundColor: color ? "initial" : "#2480EA",
     border: "2px solid #2480EA",
   };
   return (

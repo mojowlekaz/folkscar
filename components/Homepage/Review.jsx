@@ -60,8 +60,16 @@ export default function Review() {
             What Our Customers Say
           </h1>
           <div className="flex gap-2">
-            <ArrowLeft prevReview={prevReview} color={color} />
-            <ArrowRight nextReview={nextReview} color={color} />
+            <ArrowLeft
+              prevReview={prevReview}
+              activeReview={activeReview}
+              color={color}
+            />
+            <ArrowRight
+              nextReview={nextReview}
+              activeReview={activeReview}
+              color={color}
+            />
           </div>
         </div>
 

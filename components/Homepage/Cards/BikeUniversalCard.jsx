@@ -15,7 +15,7 @@ export default function BikeUniversalCard({ vehicle }) {
           <p className="text-black mt-[10px]">/Day</p>
         </div>
 
-        <div className="flex bg-F6F6F6 w-[300px] rounded-[16px] justify-center mt-[30px] gap-8 items-center">
+        <div className="flex bg-F6F6F6 w-[300px] rounded-[16px] justify-center mt-[30px] gap-5 items-center">
           {" "}
           {vehicle.iconsWithNames &&
             vehicle.iconsWithNames.map((item) => (
