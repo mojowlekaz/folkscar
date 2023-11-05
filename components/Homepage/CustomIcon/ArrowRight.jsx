@@ -1,8 +1,11 @@
 import React from "react";
 
-export default function ArrowRight({ nextReview, color }) {
+export default function ArrowRight({ nextReview, color, activeReview, data }) {
   const style = {
-    backgroundColor: color ? "initial" : "#2480EA",
+    backgroundColor:
+      activeReview < 0 || activeReview === data.length - 1
+        ? "initial"
+        : "#2480EA",
     border: "2px solid #2480EA",
   };
   return (

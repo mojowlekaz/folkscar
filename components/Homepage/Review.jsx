@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ArrowRight from "./CustomIcon/ArrowRight";
 import ArrowLeft from "./CustomIcon/ArrowLeft";
 
@@ -39,19 +39,23 @@ export default function Review() {
         "“ Car and motorbike rental in Surakarta, the place is a bit complicated, but it's easy to reach. The service is friendly, there are many choices of units to rent, prices are relatively competitive with other rentals. Well maintained unit, can be used outside the city too.“",
     },
   ];
+
   const [activeReview, setActiveReview] = useState(0);
   const [color, setColor] = useState(false);
   const nextReview = () => {
-    setColor(true);
-    setActiveReview((prevIndex) => (prevIndex + 1) % data.length);
+    if (activeReview < data.length - 1) {
+      setColor(true);
+      setActiveReview((prevIndex) => prevIndex + 1);
+    }
   };
 
   const prevReview = () => {
-    setColor(false);
-    setActiveReview((prevIndex) =>
-      prevIndex === 0 ? data.length - 1 : prevIndex - 1
-    );
+    if (activeReview > 0) {
+      setColor(false);
+      setActiveReview((prevIndex) => prevIndex - 1);
+    }
   };
+
   return (
     <div className="flex flex-row gap-3">
       <div className="w-full flex flex-col gap-8 p-20 justify-start   bg-000000 h-full">
@@ -68,6 +72,7 @@ export default function Review() {
             <ArrowRight
               nextReview={nextReview}
               activeReview={activeReview}
+              data={data}
               color={color}
             />
           </div>

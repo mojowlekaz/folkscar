@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function ArrowLeft({ prevReview, color }) {
+export default function ArrowLeft({ prevReview, color, activeReview }) {
   const style = {
-    backgroundColor: color === false ? "initial" : "#2480EA",
+    backgroundColor: activeReview > 0 ? "#2480EA" : "initial",
     border: "2px solid #2480EA",
   };
   return (
