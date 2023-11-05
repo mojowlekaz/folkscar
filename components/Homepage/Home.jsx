@@ -43,7 +43,7 @@ export default function Home() {
         <img
           className="bgBack"
           alt="Car Image"
-          src="/carbg.png"
+          src="/homecar.svg"
           style={{ maxWidth: "50%", width: "auto", maxHeight: "960px" }}
 
           //   layout="responsive"
