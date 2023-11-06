@@ -15,16 +15,18 @@ export default function BikeUniversalCard({ vehicle }) {
           <p className="text-black mt-[10px]">/Day</p>
         </div>
 
-        <div className="flex bg-F6F6F6 w-[300px] rounded-[16px] justify-center mt-[30px] gap-5 items-center">
+        <div className="flex bg-F6F6F6 w-[300px] h-[60px] rounded-[16px] justify-center mt-[30px] gap-7 items-center">
           {" "}
           {vehicle.iconsWithNames &&
             vehicle.iconsWithNames.map((item) => (
               <div
-                className="flex flex-col gap-2 items-center justify-center text-center"
+                className="flex flex-col gap-1  items-center justify-center text-center"
                 key={item.id}
               >
                 <img src={item.icon} alt={item.name} />
-                <p className="text-black text-center">{item.name}</p>
+                <p className="text-black  text-[12px]  text-center">
+                  {item.name}
+                </p>
               </div>
             ))}
         </div>
