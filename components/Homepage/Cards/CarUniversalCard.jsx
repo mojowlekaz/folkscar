@@ -12,7 +12,7 @@ export default function CarUniversalCard({ vehicle }) {
           <h1 className="fontF" style={{ fontSize: "32px", color: "#000" }}>
             {vehicle.price}
           </h1>
-          <p className="text-black mt-[10px]">/Day</p>
+          <p className="text-black text-opacity-50 mt-[10px]">/Day</p>
         </div>
 
         <div className="flex bg-F6F6F6 w-[300px] h-[60px] rounded-[16px] justify-center mt-[30px] gap-7 items-center">
