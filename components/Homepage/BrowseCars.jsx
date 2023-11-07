@@ -32,7 +32,7 @@ export default function BrowseCars() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row   gap-5  flex-wrap">
+      <div class="flex flex-wrap gap-4 justify-center items-center">
         {cars.map((car) => (
           <CarUniversalCard key={car.id} vehicle={car} />
         ))}
