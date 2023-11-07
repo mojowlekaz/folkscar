@@ -68,7 +68,7 @@ export default function Collections() {
         <CardCategories />
 
         <div className="content">
-          <div class="flex flex-wrap gap-4 justify-center items-center">
+          <div className="flex flex-wrap gap-4 justify-center items-center">
             {selectedCategory === "Automatic Cars" &&
               carsWithAutoTransmission.map((car) => (
                 <CarUniversalCard key={car.id} vehicle={car} />
