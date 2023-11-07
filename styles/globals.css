@@ -22,10 +22,14 @@ body {
 
 @font-face {
   font-family: "White Rabbit";
-  src: url(/fonts/whitrabt.ttf) format("truetype");
+  src: url("/fonts/WHITRABT.eot"); /* EOT for Internet Explorer */
+  src: url("/fonts/WHITRABT.woff2") format("woff2"),
+    /* Modern Browsers */ url("/fonts/WHITRABT.woff") format("woff"),
+    /* Modern Browsers */ url("/fonts/WHITRABT.ttf") format("truetype"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Space Grotesk";
   src: url("https://static1.squarespace.com/static/57bb1b5e59cc68374d95e818/t/6080799bbb54e72b94e23c28/1619032475894/SpaceGrotesk-VariableFont_wght.ttf");
