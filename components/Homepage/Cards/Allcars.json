@@ -1,0 +1,401 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "image": "car1.svg",
+      "name": "Daihatsu Terios R M/T",
+      "price": "IDR 400.000",
+      "iconsWithNames": [
+        {
+          "id": 1,
+          "icon": "speed.svg",
+          "name": "300"
+        },
+        {
+          "id": 2,
+          "icon": "manualgear.svg",
+          "name": "Manual"
+        },
+        {
+          "id": 3,
+          "icon": "people.svg",
+          "name": "7 Person"
+        },
+        {
+          "id": 4,
+          "icon": "gas.svg",
+          "name": "Gas"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "car2.svg",
+      "name": "Daihatsu Sirion R CVT 2022",
+      "price": "IDR 400.000",
+      "iconsWithNames": [
+        {
+          "id": 1,
+          "icon": "speed.svg",
+          "name": "300"
+        },
+        {
+          "id": 2,
+          "icon": "material.svg",
+          "name": "Auto"
+        },
+        {
+          "id": 3,
+          "icon": "people.svg",
+          "name": "4 Person"
+        },
+        {
+          "id": 4,
+          "icon": "gas.svg",
+          "name": "Gas"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "car3.svg",
+      "name": "Innova 2.0 G Luxury M/T 2020",
+      "price": "IDR 550.000",
+      "iconsWithNames": [
+        {
+          "id": 1,
+          "icon": "speed.svg",
+          "name": "300"
+        },
+        {
+          "id": 2,
+          "icon": "material.svg",
+          "name": "Manual"
+        },
+        {
+          "id": 3,
+          "icon": "people.svg",
+          "name": "7 Person"
+        },
+        {
+          "id": 4,
+          "icon": "gas.svg",
+          "name": "Solar"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "car4.svg",
+      "name": "Honda JAZZ RS 1.5 2017",
+      "price": "IDR 300.000",
+      "iconsWithNames": [
+        {
+          "id": 1,
+          "icon": "speed.svg",
+          "name": "300"
+        },
+        {
+          "id": 2,
+          "icon": "material.svg",
+          "name": "Auto"
+        },
+        {
+          "id": 3,
+          "icon": "people.svg",
+          "name": "4 Person"
+        },
+        {
+          "id": 4,
+          "icon": "gas.svg",
+          "name": "Gas"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "image": "car5.svg",
+      "name": "Honda JAZZ RS 1.5 2017",
+      "price": "IDR 300.000",
+      "iconsWithNames": [
+        {
+          "id": 1,
+          "icon": "speed.svg",
+          "name": "300"
+        },
+        {
+          "id": 2,
+          "icon": "material.svg",
+          "name": "Auto"
+        },
+        {
+          "id": 3,
+          "icon": "people.svg",
+          "name": "4 Person"
+        },
+        {
+          "id": 4,
+          "icon": "gas.svg",
+          "name": "Gas"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "image": "car6.svg",
+      "name": "Mitsubishi Xpander Cross AT 2021",
+      "price": "IDR 400.000",
+      "iconsWithNames": [
+        {
+          "id": 1,
+          "icon": "speed.svg",
+          "name": "300"
+        },
+        {
+          "id": 2,
+          "icon": "material.svg",
+          "name": "Auto"
+        },
+        {
+          "id": 3,
+          "icon": "people.svg",
+          "name": "7 Person"
+        },
+        {
+          "id": 4,
+          "icon": "gas.svg",
+          "name": "Gas"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "image": "card7.svg",
+      "name": "Toyota Calya G AT 2022",
+      "price": "IDR 400.000",
+      "iconsWithNames": [
+        {
+          "id": 1,
+          "icon": "speed.svg",
+          "name": "300"
+        },
+        {
+          "id": 2,
+          "icon": "material.svg",
+          "name": "Auto"
+        },
+        {
+          "id": 3,
+          "icon": "people.svg",
+          "name": "6 Person"
+        },
+        {
+          "id": 4,
+          "icon": "gas.svg",
+          "name": "Gas"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "image": "card8.svg",
+      "name": "Honda Mobilio S MT 2022",
+      "price": "IDR 300.000",
+      "iconsWithNames": [
+        {
+          "id": 1,
+          "icon": "speed.svg",
+          "name": "300"
+        },
+        {
+          "id": 2,
+          "icon": "material.svg",
+          "name": "Auto"
+        },
+        {
+          "id": 3,
+          "icon": "people.svg",
+          "name": "6 Person"
+        },
+        {
+          "id": 4,
+          "icon": "gas.svg",
+          "name": "Gas"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "image": "card9.svg",
+      "name": "Toyota Avanza 1.3 E CVT 2022",
+      "price": "IDR 400.000",
+      "iconsWithNames": [
+        {
+          "id": 1,
+          "icon": "speed.svg",
+          "name": "300"
+        },
+        {
+          "id": 2,
+          "icon": "material.svg",
+          "name": "Auto"
+        },
+        {
+          "id": 3,
+          "icon": "people.svg",
+          "name": "6 Person"
+        },
+        {
+          "id": 4,
+          "icon": "gas.svg",
+          "name": "Gas"
+        }
+      ]
+    }
+  ],
+
+  "motorcycles": [
+    {
+      "id": 1,
+      "image": "bike1.svg",
+      "name": "Vespa Matic",
+      "price": "IDR 75.000",
+      "iconsWithNames": [
+        {
+          "id": 1,
+          "icon": "speed.svg",
+          "name": "300"
+        },
+        {
+          "id": 2,
+          "icon": "material.svg",
+          "name": "Manual"
+        },
+        {
+          "id": 3,
+          "icon": "people.svg",
+          "name": "2 Person"
+        },
+        {
+          "id": 4,
+          "icon": "gas.svg",
+          "name": "Gas"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "bike2.svg",
+      "name": "Honda Scoopy",
+      "price": "IDR 75.000",
+      "iconsWithNames": [
+        {
+          "id": 1,
+          "icon": "speed.svg",
+          "name": "300"
+        },
+        {
+          "id": 2,
+          "icon": "material.svg",
+          "name": "Auto"
+        },
+        {
+          "id": 3,
+          "icon": "people.svg",
+          "name": "2 Person"
+        },
+        {
+          "id": 4,
+          "icon": "gas.svg",
+          "name": "Gas"
+        }
+      ]
+    },
+
+    {
+      "id": 3,
+      "image": "bike3.svg",
+      "name": "Honda Beat",
+      "price": "IDR 75.000",
+      "iconsWithNames": [
+        {
+          "id": 1,
+          "icon": "speed.svg",
+          "name": "300"
+        },
+        {
+          "id": 2,
+          "icon": "material.svg",
+          "name": "Auto"
+        },
+        {
+          "id": 3,
+          "icon": "people.svg",
+          "name": "2 Person"
+        },
+        {
+          "id": 4,
+          "icon": "gas.svg",
+          "name": "Gas"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "bike4.svg",
+      "name": "Yamaha N-Max",
+      "price": "IDR 200.000",
+      "iconsWithNames": [
+        {
+          "id": 1,
+          "icon": "speed.svg",
+          "name": "300"
+        },
+        {
+          "id": 2,
+          "icon": "material.svg",
+          "name": "Auto"
+        },
+        {
+          "id": 3,
+          "icon": "people.svg",
+          "name": "2 Person"
+        },
+        {
+          "id": 4,
+          "icon": "gas.svg",
+          "name": "Gas"
+        }
+      ]
+    },
+
+    {
+      "id": 5,
+      "image": "bike5.svg",
+      "name": "Honda Vario",
+      "price": "IDR 175.000",
+      "iconsWithNames": [
+        {
+          "id": 1,
+          "icon": "speed.svg",
+          "name": "300"
+        },
+        {
+          "id": 2,
+          "icon": "material.svg",
+          "name": "Auto"
+        },
+        {
+          "id": 3,
+          "icon": "people.svg",
+          "name": "2 Person"
+        },
+        {
+          "id": 4,
+          "icon": "gas.svg",
+          "name": "Gas"
+        }
+      ]
+    }
+  ]
+}

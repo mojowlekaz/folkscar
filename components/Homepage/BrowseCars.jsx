@@ -6,7 +6,7 @@ import VehicleDropdown from "./DropdownMenu/VehicleDropdown";
 import CapacityDropdown from "./DropdownMenu/CapacityDropdown";
 import RentalTypeDropdown from "./DropdownMenu/RentalTypeDropdown";
 import CarUniversalCard from "@/components/Homepage/Cards/CarUniversalCard";
-import vehicledata from "@/components/Homepage/Cards/Cardsjson";
+import vehicledata from "@/components/Homepage/Cards/Allcars";
 import { useCategory } from "@/components/Homepage/Context/CategoryContext";
 import BikeUniversalCard from "./Cards/BikeUniversalCard";
 
@@ -15,8 +15,8 @@ export default function BrowseCars() {
   const [selectedOption, setSelectedOption] = useState("Vehicle Type");
   const [showmenu, setShowMenu] = useState(false);
   const [effectActive, setEffectActive] = useState(false);
-  const cars = vehicledata.cars.slice(0, 6);
-  const bikes = vehicledata.motorcycles.slice(0, 4);
+  const cars = vehicledata.cars.slice(0, 9);
+  const bikes = vehicledata.motorcycles.slice(0, 5);
 
   return (
     <div className="bg-101010 mob_hid p-10 gap-2 flex flex-col h-full">
@@ -32,7 +32,7 @@ export default function BrowseCars() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-evenly  gap-5  flex-wrap">
+      <div className="flex flex-row   gap-5  flex-wrap">
         {cars.map((car) => (
           <CarUniversalCard key={car.id} vehicle={car} />
         ))}
