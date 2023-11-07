@@ -21,7 +21,7 @@ body {
 }
 @font-face {
   font-family: "White Rabbit";
-  src: url("/fonts/whitrabt-webfont.woff");
+  src: url("fonts/whitrabt-webfont.woff") format("woff");
   src: url("/fonts/whitrabt-webfont.woff?iefix") format("eot"),
     url("/fonts/whitrabt-webfont.woff.woff") format("woff"),
     url("/fonts/whitrabt-webfont.woff.ttf") format("truetype"),
