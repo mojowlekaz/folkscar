@@ -16,7 +16,7 @@ export default function BrowseCars() {
   const [showmenu, setShowMenu] = useState(false);
   const [effectActive, setEffectActive] = useState(false);
   const cars = vehicledata.cars.slice(0, 6);
-  const bikes = vehicledata.motorcycles.slice(0, 6);
+  const bikes = vehicledata.motorcycles.slice(0, 4);
 
   return (
     <div className="bg-101010 mob_hid p-10 gap-2 flex flex-col h-full">
@@ -32,7 +32,7 @@ export default function BrowseCars() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-evenly p-10 gap-4  flex-wrap">
+      <div className="flex flex-row justify-evenly  gap-5  flex-wrap">
         {cars.map((car) => (
           <CarUniversalCard key={car.id} vehicle={car} />
         ))}
