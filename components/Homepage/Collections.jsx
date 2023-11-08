@@ -9,8 +9,8 @@ import { useCategory } from "./Context/CategoryContext";
 import CarCollections from "./CarCollections";
 
 export default function Collections() {
-  const cars = vehicledata.cars.slice(0, 3);
-  const bikes = vehicledata.motorcycles.slice(0, 3);
+  const cars = vehicledata.cars.slice(0, 6);
+  const bikes = vehicledata.motorcycles.slice(0, 6);
   const car = vehicledata.cars.slice(0, 6);
   const bike = vehicledata.motorcycles.slice(0, 6);
   const carsWithAutoTransmission = vehicledata.cars.filter((car) =>
