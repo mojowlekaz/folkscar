@@ -21,11 +21,11 @@ body {
 }
 @font-face {
   font-family: "White Rabbit";
-  src: url("/fonts/whitrabt-webfont.woff") format("woff");
-  src: url("/fonts/whitrabt-webfont.woff?iefix") format("eot"),
-    url("/fonts/whitrabt-webfont.woff.woff") format("woff"),
-    url("/fonts/whitrabt-webfont.woff.ttf") format("truetype"),
-    url("/fonts/whitrabt-webfont.woff.svg#webfont") format("svg");
+  src: url("/public/fonts/whitrabt-webfont.woff") format("woff");
+  src: url("/public/fonts/whitrabt-webfont.woff?iefix") format("eot"),
+    url("/public/fonts/whitrabt-webfont.woff.woff") format("woff"),
+    url("/public/fonts/whitrabt-webfont.woff.ttf") format("truetype"),
+    url("/public/fonts/whitrabt-webfont.woff.svg#webfont") format("svg");
 }
 @font-face {
   font-family: "Space Grotesk";
@@ -33,7 +33,7 @@ body {
 }
 @font-face {
   font-family: "HelveticaRounded";
-  src: url("/fonts/HelveticaRounded.otf") format("opentype");
+  src: url("/public/fonts/HelveticaRounded.otf") format("opentype");
 }
 
 nav {
