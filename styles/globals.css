@@ -21,12 +21,10 @@ body {
 }
 @font-face {
   font-family: "White Rabbit";
-  src: url("/public/fonts/whitrabt-webfont.woff") format("woff");
-  src: url("/public/fonts/whitrabt-webfont.woff?iefix") format("eot"),
-    url("/public/fonts/whitrabt-webfont.woff.woff") format("woff"),
-    url("/public/fonts/whitrabt-webfont.woff.ttf") format("truetype"),
-    url("/public/fonts/whitrabt-webfont.woff.svg#webfont") format("svg");
+  src: url("/public/fonts/WHITRABT.ttf") format("truetype");
+  /* url("/public/fonts/whitrabt-webfont.svg#webfont") format("svg"); */
 }
+
 @font-face {
   font-family: "Space Grotesk";
   src: url("https://static1.squarespace.com/static/57bb1b5e59cc68374d95e818/t/6080799bbb54e72b94e23c28/1619032475894/SpaceGrotesk-VariableFont_wght.ttf");
