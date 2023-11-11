@@ -19,11 +19,6 @@
 body {
   background: #fff;
 }
-@font-face {
-  font-family: "White Rabbit";
-  src: url("/public/fonts/WHITRABT.ttf") format("truetype");
-  /* url("/public/fonts/whitrabt-webfont.svg#webfont") format("svg"); */
-}
 
 @font-face {
   font-family: "Space Grotesk";
@@ -35,7 +30,7 @@ body {
 }
 
 nav {
-  font-family: "White Rabbit", Arial sans-serif;
+  font-family: "White Rabbit", sans-serif;
   position: relative;
   z-index: 1;
 }
@@ -45,7 +40,7 @@ nav {
   z-index: 1;
 }
 h1 {
-  font-family: "White Rabbit", Arial sans-serif;
+  font-family: "White Rabbit", sans-serif;
   color: #ffffff;
 }
 button {
