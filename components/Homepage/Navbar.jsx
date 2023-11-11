@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="pl-5 p-3 justify-between bg-1A1A1A flex items-center flex-row">
+      <nav className="px-5 h-[88px] justify-between bg-1A1A1A flex items-center flex-row">
         <Image height={100} width={100} src="Text.svg" />
 
         <ul className="font-normal text-white flex flex-row text-base gap-5 leading-3">

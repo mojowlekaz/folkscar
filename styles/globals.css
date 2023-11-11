@@ -68,9 +68,12 @@ li {
 
 .fixed-text {
   font-size: 84px;
-  font-family: "HelveticaRounded", Arial sans-serif;
+  font-family: "HelveticaRounded", sans-serif;
   word-wrap: none;
   word-break: none;
+}
+.btnmint {
+  font-family: "HelveticaRounded", sans-serif;
 }
 .borderC {
   border-top: 1px solid #2480ea;
