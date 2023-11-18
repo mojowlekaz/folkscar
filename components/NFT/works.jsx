@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function works() {
+export default function Works() {
   const text = [
     {
       text: "Purchase a VSP and join our Discord to instantly become part of a passionate community of sports and NFT enthusiasts.",
