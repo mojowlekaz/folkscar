@@ -1,7 +1,10 @@
+@import url("https://fonts.cdnfonts.com/css/white-rabbit-2");
+@import url("https://fonts.cdnfonts.com/css/eurostile-extended");
+@import url("https://fonts.cdnfonts.com/css/helvetica-255");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -19,36 +22,72 @@
 body {
   background: #fff;
 }
-@font-face {
-  font-family: "White Rabbit";
-  src: url("/whitrabt.ttf") format("truetype");
-}
 
 @font-face {
   font-family: "Space Grotesk";
   src: url("https://static1.squarespace.com/static/57bb1b5e59cc68374d95e818/t/6080799bbb54e72b94e23c28/1619032475894/SpaceGrotesk-VariableFont_wght.ttf");
 }
-@font-face {
-  font-family: "HelveticaRounded";
-  src: url("/public/fonts/HelveticaRounded.otf") format("opentype");
-}
 
 nav {
-  font-family: "White Rabbit", Arial sans-serif;
+  font-family: "White Rabbit";
   position: relative;
   z-index: 1;
 }
+.perks {
+  border-radius: 10px;
+  background: linear-gradient(94deg, #9b51e0 2.84%, #3081ed 99.18%);
+  filter: blur(62px);
+  /* filter: opacity(100rem); */
+  height: 250px;
+  /* flex-shrink: 0; */
+  height: 346px;
+  width: 100%;
+  border-color: none;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+small {
+  color: rgba(255, 255, 255, 0.56);
+  text-align: center;
+  font-family: Space Grotesk;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
 
+.eurostile {
+  font-family: "Eurostile Extended", "Arial", sans-serif !important;
+  font-style: normal;
+}
+
+.eurostilep {
+  color: #fff;
+  font-family: "Eurostile Extended", "Arial", sans-serif !important;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.stepColor {
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 14px;
+}
 .bgfront {
   position: relative;
   z-index: 1;
 }
 h1 {
-  font-family: "White Rabbit", Arial sans-serif;
+  font-family: "White Rabbit", sans-serif !important;
   color: #ffffff;
 }
 button {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Space Grotesk", sans-serif !important;
   cursor: pointer;
 }
 li {
@@ -65,12 +104,16 @@ li {
 
 .fixed-text {
   font-size: 84px;
-  font-family: "HelveticaRounded", sans-serif;
+  font-family: "Helvetica", sans-serif !important;
   word-wrap: none;
   word-break: none;
 }
+
+.helvetica {
+  font-family: "Helvetica", sans-serif !important;
+}
 .btnmint {
-  font-family: "HelveticaRounded", sans-serif;
+  font-family: "Helvetica Light", sans-serif !important;
 }
 .borderC {
   border-top: 1px solid #2480ea;
@@ -86,7 +129,7 @@ li {
 
 p {
   font-size: 18px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Space Grotesk", sans-serif !important;
   color: #ffffff;
 }
 .fontF {
@@ -109,6 +152,18 @@ p {
 }
 .text {
   color: #00000080 50%;
+}
+
+.fline {
+  border-top: 2px solid rgba(255, 255, 255, 0.25);
+
+  width: 100%;
+}
+
+.sline {
+  background: #999;
+  height: 1px;
+  width: 100%;
 }
 
 .no-focus-outline {
@@ -204,7 +259,7 @@ p {
   body {
     display: flex;
     margin: 0 auto;
-    max-width: 1500px;
+    max-width: 2000px;
     justify-content: center;
     align-items: center;
   }
