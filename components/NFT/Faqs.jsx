@@ -146,6 +146,8 @@ const Faqs = () => {
     });
   };
 
+  // ...
+
   return (
     <div className="h-full w-full py-10 bg-060606 items-center flex flex-col">
       <h1 className="font-bold text-[32px] eurostile leading-normal">FAQS</h1>
@@ -153,7 +155,7 @@ const Faqs = () => {
       <div className="bg-none flex flex-col">
         {faqItems.map((item, index) => (
           <div key={index} className="flex-col">
-            <div className="flex  items-center justify-between">
+            <div className="flex items-center justify-between">
               <p className="font-700 eurostile text-[32px]">{item.title}</p>
               <FiChevronDown
                 onClick={() => {
@@ -167,7 +169,13 @@ const Faqs = () => {
             </div>
             <div>
               {expandedItems[index] && (
-                <div className="flex w-[1090px] mt-5  flex-wrap">
+                <div
+                  className={`flex w-full mt-5 flex-wrap ${
+                    window.innerWidth >= 1023 && window.innerWidth <= 1099
+                      ? "max-w-[1000px]"
+                      : "max-w-[1090px]"
+                  }`}
+                >
                   <p
                     className="font-medium leading-30px"
                     style={{ wordWrap: "break-word" }}
@@ -179,21 +187,17 @@ const Faqs = () => {
             </div>
             <div>
               <br />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1090"
-                height="2"
-                viewBox="0 0 1090 2"
-                fill="none"
-              >
-                <path d="M0 1H1090" stroke="white" strokeOpacity="0.7" />
-              </svg>
+              <div
+                className="w-[1090px] linew h-[1.9px] bg-white"
+                // style={{ opacity: 0.7 }}
+              ></div>
             </div>
           </div>
         ))}
       </div>
     </div>
   );
+  // ...
 };
 
 export default Faqs;

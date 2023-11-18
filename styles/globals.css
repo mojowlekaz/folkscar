@@ -191,6 +191,11 @@ p {
   }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1099px) {
+  .linew {
+    width: 1000px;
+  }
+}
 @media screen and (min-width: 700px) and (max-width: 1045px) {
   .smallwidth {
     width: 400px;
