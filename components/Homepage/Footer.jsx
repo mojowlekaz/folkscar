@@ -19,7 +19,7 @@ export default function Footer() {
         <ul className="font-normal text-white flex flex-row text-base gap-20 leading-3">
           {navigationItems.map((item, index) => (
             <li key={index}>
-              <p>{item.text}</p>
+              <a href={`/${item.text.toLowerCase()}`}>{item.text}</a>
             </li>
           ))}
         </ul>
