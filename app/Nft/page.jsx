@@ -6,7 +6,7 @@ import VerticalStepper from "@/components/NFT/VerticalStepper";
 import Faqs from "@/components/NFT/Faqs";
 import Footers from "@/components/NFT/Footers";
 import Socials from "@/components/NFT/Socials";
-import Works from "@/components/NFT/works";
+import Works from "@/components/NFT/Works";
 
 export default function page() {
   return (
