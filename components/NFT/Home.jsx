@@ -7,12 +7,12 @@ const Home = () => {
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 object-cover w-full h-full"
+        className="absolute justify-center items-center flex top-0 left-0 object-cover w-full h-full"
       >
         <source src="/home.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div>
+      <div className="flex flex-col items-center justify-center">
         <div className="relative z-10  flex flex-col gap-4  p-20 w-[576px] text-white">
           <h1 className=" font-bold eurostile  flex  items-center text-[100px] leading-[93px] ">
             EARLY

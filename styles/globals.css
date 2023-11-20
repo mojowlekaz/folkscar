@@ -1,4 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/white-rabbit-2");
+@import url("https://fonts.cdnfonts.com/css/white-rabbit");
 @import url("https://fonts.cdnfonts.com/css/eurostile-extended");
 @import url("https://fonts.cdnfonts.com/css/helvetica-255");
 
@@ -29,7 +29,7 @@ body {
 }
 
 nav {
-  font-family: "White Rabbit";
+  font-family: "white-rabbit";
   position: relative;
   z-index: 1;
 }
@@ -60,13 +60,13 @@ small {
 }
 
 .eurostile {
-  font-family: "Eurostile Extended", "Arial", sans-serif !important;
+  font-family: "eurostile-extended", "Arial", sans-serif !important;
   font-style: normal;
 }
 
 .eurostilep {
   color: #fff;
-  font-family: "Eurostile Extended", "Arial", sans-serif !important;
+  font-family: "eurostile-extended", "Arial", sans-serif !important;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -83,7 +83,7 @@ small {
   z-index: 1;
 }
 h1 {
-  font-family: "White Rabbit", sans-serif !important;
+  font-family: "white-rabbit", sans-serif !important;
   color: #ffffff;
 }
 button {

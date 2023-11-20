@@ -33,9 +33,9 @@ export default function Perks() {
       <div className="flex gap-[140px] flex-col px-40   h-full bg-black  justify-center items-center">
         <br />
 
-        <h1 className="font-bold eurostile text-[32px] leading-[44px]">
+        <h2 className="font-bold text-white eurostile text-[32px] leading-[44px]">
           Perks of Ownership
-        </h1>
+        </h2>
 
         <div className="perks  relative flex justify-around items-center flex-row gap-3 border-0"></div>
 
@@ -61,7 +61,9 @@ export default function Perks() {
                 />
 
                 <div className="relative flex flex-col items-center text-center  gap-4">
-                  <p className="eurostile">{img.title}</p>
+                  <span className="white-rabbit text-white text-[18px] font-medium">
+                    {img.title}
+                  </span>
                   <div className="w-[190px] h-[68px]">
                     <p className="flex text-[14px] text-center justify-center items-center">
                       {img.topic}

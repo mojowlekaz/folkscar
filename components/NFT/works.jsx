@@ -15,9 +15,9 @@ export default function Works() {
   return (
     <div>
       <div className="p-20 flex flex-col gap-2 bg-060606 h-full">
-        <h1 className="font-bold text-[32px] eurostile leading-normal">
+        <h2 className="font-bold text-[32px] text-white eurostile leading-normal">
           HOW IT WORKS
-        </h1>
+        </h2>
         <div className="gap-3 flex flex-col relative">
           {text.map((texts, index) => (
             <div key={index}>

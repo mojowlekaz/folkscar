@@ -54,13 +54,10 @@ const VerticalStepper = () => {
 
   const lines = StepperImage.slice(0, 1);
   return (
-    <div className="bg-black h-full  w-full py-10  flex flex-col justify-center items-center gap-2">
-      <div
-        className="flex flex-row justify-center items-center 
-      
-      "
-      >
-        <div className="flex justify-center flex-col gap-4 w-[522px]">
+    <div className="bg-black h-full  w-full   flex flex-col justify-center items-center gap-2">
+      <div className="mt-[200px]" />
+      <div className="flex flex-row h-[638px] justify-center items-center">
+        <div className="flex justify-center flex-col gap-1 w-[522px] ">
           {StepperImage.map((step, index) => (
             <div>
               <div key={index} className="flex flex-row items-center gap-2">
@@ -74,9 +71,9 @@ const VerticalStepper = () => {
                   <div>
                     <div className="">
                       <small>{StepperContent[index].date}</small>
-                      <h1 className="font-bold uppercase text-white text-[32px] eurostile">
+                      <h2 className="font-bold uppercase text-white text-[32px] eurostile">
                         {StepperContent[index].context}
-                      </h1>
+                      </h2>
                       <p className="text-[14px] font-[500] stepColor leading-normal">
                         {StepperContent[index].title}
                       </p>
@@ -87,13 +84,13 @@ const VerticalStepper = () => {
 
               {index < 2 && (
                 <div className="relative top-2 left-[47px]">
-                  <Image height={20} width={2} src={step.line} alt="line" />
+                  <Image height={10} width={2} src={step.line} alt="line" />
                 </div>
               )}
             </div>
           ))}
 
-          {/* <div className="flex flex-row"></div> */}
+          <div className="mb-[200px]" />
         </div>
       </div>
     </div>
