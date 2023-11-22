@@ -146,8 +146,6 @@ const Faqs = () => {
     });
   };
 
-  // ...
-
   return (
     <div className="h-full w-full py-10 bg-060606 items-center flex flex-col">
       <h1 className="font-bold text-[32px] eurostile leading-normal">FAQS</h1>
@@ -156,7 +154,7 @@ const Faqs = () => {
         {faqItems.map((item, index) => (
           <div key={index} className="flex-col">
             <div className="flex items-center justify-between">
-              <p className="font-700 eurostile text-[32px]">{item.title}</p>
+              <p className="font-700  text-[32px]">{item.title}</p>
               <FiChevronDown
                 onClick={() => {
                   handleToggle(index);
@@ -197,7 +195,6 @@ const Faqs = () => {
       </div>
     </div>
   );
-  // ...
 };
 
 export default Faqs;
