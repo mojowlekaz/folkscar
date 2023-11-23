@@ -149,6 +149,7 @@ const Faqs = () => {
   return (
     <div className="h-full w-full py-10 bg-060606 items-center flex flex-col">
       <h1 className="font-bold text-[32px] eurostile leading-normal">FAQS</h1>
+      <div className="mt-[50px]" />
       <br />
       <div className="bg-none flex flex-col">
         {faqItems.map((item, index) => (
@@ -192,6 +193,7 @@ const Faqs = () => {
             </div>
           </div>
         ))}
+        <div className="mb-[100px]" />
       </div>
     </div>
   );
