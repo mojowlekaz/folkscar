@@ -11,13 +11,21 @@ export default function Navbar() {
           <Image height={50} width={50} src="Icon.svg" />
           <img style={{ width: "100%", height: "100%" }} src="folks.svg" />
         </div>
-
         <ul className="font-normal text-white btnmint flex flex-row text-base gap-7 leading-3">
           {navigationItems.map((item, index) => (
             <li key={index}>
-              <p className="btnmint font-bold leading-[24px] text-[16px] ">
-                {item}
-              </p>
+              {item === "ALLOWLIST" ? (
+                <a
+                  href="allowlist"
+                  className="btnmint font-bold leading-[24px] text-[16px] "
+                >
+                  {item}
+                </a>
+              ) : (
+                <a className="btnmint font-bold leading-[24px] text-[16px] ">
+                  {item}
+                </a>
+              )}
             </li>
           ))}
         </ul>

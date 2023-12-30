@@ -1,5 +1,5 @@
 import Home from "@/components/NFT/Home";
-import Navbar from "@/components/Minting/Navbar";
+import Navbar from "@/components/Allowlist/Navbar";
 import React from "react";
 import Perks from "@/components/NFT/Perks";
 import VerticalStepper from "@/components/NFT/VerticalStepper";

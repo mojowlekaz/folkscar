@@ -1,4 +1,5 @@
 import React from "react";
+import Joinwaitlist from "../Allowlist/Joinwaitlist";
 
 const Home = () => {
   return (
@@ -26,12 +27,7 @@ const Home = () => {
           <br />
           <div className="flex gap-4">
             {" "}
-            <button className="eurostile bg-0073F0 justify-center flex gap-[10px] items-center w-[197px] h-[44px]">
-              <p className="text-[15px] eurostile uppercase  leading-normal font-bold">
-                {" "}
-                Join Waitlist
-              </p>
-            </button>
+            <Joinwaitlist />
             <button className="eurostile bg-none border-2 justify-center flex gap-[10px] items-center w-[197px] h-[44px]">
               <p className="text-[15px] eurostile uppercase  leading-normal font-bold">
                 {" "}

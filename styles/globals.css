@@ -170,6 +170,15 @@ p {
   outline: none !important;
   border: none !important;
 }
+
+.custom-input:focus {
+  border: 1px solid #00ff0a;
+}
+
+.share {
+  border-radius: 4px;
+  background: #333;
+}
 /* Screen Sizes Chnages */
 @media (min-width: 901px) {
   .fixed-text {
